@@ -12,36 +12,39 @@ createBtn.addEventListener('click', onCreateBtnClick)
 destroyBtn.addEventListener('click',onDestroyBtnClick)
 
 function onCreateBtnClick() {
-  const amount = +input.value;
+  let amount = Number(input.value);
 
   createBoxes(amount);
 }
 
 function onDestroyBtnClick() {
-  boxes.innerHTML = '';
+  boxes.innerHTML = ' ';
 }
 
 
 function createBoxes (amount) {
 
-    console.log(amount);
-  const basicSize = 30;
-  const fragment = document.createDocumentFragment();
+  console.log(amount);
+  let basicSize = 30;
+  let fragment = document.createDocumentFragment();
 
-  for (let i = 0; i < amount; i++) {
+  for (let i = 0; i <= amount; i++) {
     
-    const size = basicSize + i * 10;
-    const div = document.createElement('div');
+    let size = basicSize + i * 10;
+    let div = document.createElement('div');
     
-    div.style.cssText = `width: ${size}px; height: ${size}px; background-color: #${getRandomHexColor()}`;
+    div.style.cssText = `width: ${size}px; height: ${size}px; background-color: #${getRandomHexColor()};`;
     fragment.appendChild(div);
-    
+
   }
 
   console.log(fragment);
   boxes.appendChild(fragment);
   
 }
+
+
+
 
 
 

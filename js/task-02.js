@@ -18,8 +18,16 @@ const ingredientItemsList = ingredients.map(ingredient => {
   ingredientItem.textContent = ingredient;
   ingredientItem.classList.add("item");
 
-  ingredientsList.appendChild(ingredientItem);
+ // console.log(ingredientItem.textContent);
+
+  //ingredientsList.appendChild(ingredientItem);
 });
 
-console.log(ingredientsList);
+
+ingredientsList.append(...ingredientItemsList);
+
+
+//ingredientsList.innerHTML = ingredientItemsList;
+
+//console.log(ingredientsList);
 

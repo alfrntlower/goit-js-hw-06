@@ -20,11 +20,9 @@ const categoriesItemEl = document.querySelectorAll(".item");
 console.log(`Number of categories: ${categoriesItemEl.length}`);
 
 
-console.log(`Category: ${categoriesItemEl[0].firstElementChild.textContent}`);
-console.log(`Elements: ${categoriesItemEl[0].querySelectorAll('li').length}`);
+categoriesItemEl.forEach(el => {
+    console.log(`Category: ${el.firstElementChild.textContent}`);
+    console.log(`Elements: ${el.querySelectorAll('li').length}`);
 
-console.log(`Category: ${categoriesItemEl[1].firstElementChild.textContent}`);
-console.log(`Elements: ${categoriesItemEl[1].querySelectorAll('li').length}`);
+});
 
-console.log(`Category: ${categoriesItemEl[2].firstElementChild.textContent}`);
-console.log(`Elements: ${categoriesItemEl[2].querySelectorAll('li').length}`);
