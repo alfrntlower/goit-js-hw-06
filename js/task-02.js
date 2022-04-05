@@ -18,7 +18,7 @@ const ingredientItemsList = ingredients.map(ingredient => {
   ingredientItem.textContent = ingredient;
   ingredientItem.classList.add("item");
 
- // console.log(ingredientItem.textContent);
+  return ingredientItem;
 
   //ingredientsList.appendChild(ingredientItem);
 });
@@ -27,7 +27,5 @@ const ingredientItemsList = ingredients.map(ingredient => {
 ingredientsList.append(...ingredientItemsList);
 
 
-//ingredientsList.innerHTML = ingredientItemsList;
 
-//console.log(ingredientsList);
 

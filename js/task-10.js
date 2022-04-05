@@ -3,7 +3,7 @@ function getRandomHexColor() {
 }
 
 const input = document.querySelector('input');
-let boxes = document.querySelectorAll("#boxes");
+let boxes = document.querySelector("#boxes");
 
 const createBtn = document.querySelector('[data-create]');
 const destroyBtn = document.querySelector('[data-destroy]');
