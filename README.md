@@ -2,3 +2,5 @@
 goit-js-hw-06
 
 https://alfrntlower.github.io/goit-js-hw-06/
+
+Работа с DOM
